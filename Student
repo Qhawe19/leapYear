@@ -1,0 +1,26 @@
+import java.util.Scanner ;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Student
+{
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        System.out.println("Enter your name: ");
+        String name = in.next();
+        System.out.println("Enter your surname: ");
+        String surname = in.next();
+        
+        Date date = new Date();
+           SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+          String strDate= formatter.format(date);
+        System.out.println("Enter your student number: ");
+       int studentNo = reader.nextInt();
+     System.out.println("Enter your contact details: ");
+       int contactDetails = reader.nextInt();
+       System.out.println("Enter your physical address: ");
+        String pAddress = in.next();
+        
+       System.out.println("The student information is as follows: "name+" "+surname+" "+ strDate+" "+ studentNo+" "+contactDetails+" "+ pAddress;
+    }
+}
